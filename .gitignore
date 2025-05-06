@@ -4,3 +4,14 @@ __pycache__/
 .DS_Store
 *.pyc
 *.pkl
+
+# Java/Gradle 构建产物
+*.class
+*.jar
+*.log
+build/
+.gradle/
+*.iml
+
+# Jupyter kernel 本地安装路径（不要提交）
+~/.local/share/jupyter/kernels/
