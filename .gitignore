@@ -14,4 +14,4 @@ build/
 *.iml
 
 # Jupyter kernel 本地安装路径（不要提交）
-~/.local/share/jupyter/kernels/
+environment/kernels/
