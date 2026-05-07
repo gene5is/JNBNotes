@@ -15,22 +15,29 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build:
+  deploy-book:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-          
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
       - name: Install dependencies
         run: |
-          gem install bundler
-          bundle install
-          
-      - name: Build with Jekyll
+          pip install -U jupyter-book ghp-import
+
+      - name: Build the book
         run: |
-          bundle exec jekyll build
-          
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./_site
+          jupyter-book build .
+
+      - name: Check build output
+        run: |
+          ls -la _build/html
+
+      - name: Deploy to GitHub Pages
+        run: |
+          ghp-import -n -p -f _build/html/
