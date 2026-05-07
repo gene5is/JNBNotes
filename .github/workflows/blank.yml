@@ -34,6 +34,10 @@ jobs:
       - name: Build the book
         run: |
           jupyter-book build .
+          
+      - name: Check build output
+        run: |
+          ls -la _build/html
 
       - name: Deploy to GitHub Pages
         run: |
