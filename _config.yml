@@ -34,3 +34,14 @@ html:
 markdown: kramdown
 kramdown:
   math_engine: mathjax
+
+# _config.yml
+sphinx:
+  config:
+    mathjax_path: mathjax/jquery.mathjax.min.js
+    mathjax_config:
+      TeX: {equationNumbers: {autoNumber: "AMS"}}
+      
+parse:
+  myst_enable_extensions:
+    - dollarmath
