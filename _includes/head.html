@@ -1,0 +1,13 @@
+{% if site.mathjax %}
+MathJax.Hub.Config({
+  tex: {
+    inlineMath: [['\$', '\$'], ['\$', '\$']],
+    displayMath: [['$$', '$$'], ['\$$', '\$$
+']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+});
+// ]]>
+{% endif %}
