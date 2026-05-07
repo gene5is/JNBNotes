@@ -20,11 +20,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1' # Jekyll 支持的版本
           
       - name: Install dependencies
         run: |
