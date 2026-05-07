@@ -4,7 +4,7 @@
 title: 笔记
 author: wjj 
 logo: logo.png
-
+theme: minima
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
@@ -31,13 +31,16 @@ html:
   use_issues_button: true
   use_repository_button: true
 
-markdown: kramdown
-kramdown:
-  math_engine: mathjax
-
 # MathJax 配置
 mathjax: true
 mathjax_path: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+
+# 构建设置
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 
 plugins:
   - jekyll-feed
