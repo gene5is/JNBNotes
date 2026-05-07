@@ -1,13 +1,13 @@
-{% if site.mathjax %}
-MathJax.Hub.Config({
-  tex: {
-    inlineMath: [['\$', '\$'], ['\$', '\$']],
-    displayMath: [['$$', '$$'], ['\$$', '\$$
-']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-});
-// ]]>
-{% endif %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  
+  {% if site.mathjax %}
+  {% endif %}
+  
+  {% if site.katex %}
+  {% endif %}
+</head>
