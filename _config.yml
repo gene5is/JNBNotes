@@ -31,17 +31,10 @@ html:
   use_issues_button: true
   use_repository_button: true
 
-markdown: kramdown
-kramdown:
-  math_engine: mathjax
+# MathJax 配置
+mathjax: true
+mathjax_path: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 
-# _config.yml
-sphinx:
-  config:
-    mathjax_path: mathjax/jquery.mathjax.min.js
-    mathjax_config:
-      TeX: {equationNumbers: {autoNumber: "AMS"}}
-      
-parse:
-  myst_enable_extensions:
-    - dollarmath
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
