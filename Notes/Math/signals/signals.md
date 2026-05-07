@@ -1,4 +1,78 @@
 
+# 数学基础
+
+## 三角函数
+$$
+\sin(\alpha+\beta) = \sin\alpha\cos\beta+\cos\alpha\sin\beta
+$$
+$$
+\sin(\alpha-\beta) = \sin\alpha\cos\beta-\cos\alpha\sin\beta
+$$
+$$
+\cos(\alpha+\beta) = \cos\alpha\cos\beta-\sin\alpha\sin\beta
+$$
+$$
+\cos(\alpha-\beta) = \cos\alpha\cos\beta+\sin\alpha\sin\beta
+$$
+
+
+## 三角函数积化和差
+$$
+\sin\alpha\cos\beta = \frac{1}{2}[\sin(\alpha+\beta)+\sin(\alpha-\beta)]
+$$
+$$
+\cos\alpha\sin\beta = \frac{1}{2}[\sin(\alpha+\beta)-\sin(\alpha-\beta)]
+$$
+$$
+\cos\alpha\cos\beta = \frac{1}{2}[\cos(\alpha+\beta)+\cos(\alpha-\beta)]
+$$
+$$
+\sin\alpha\sin\beta = \frac{1}{2}[\cos(\alpha-\beta)-\cos(\alpha+\beta)]
+$$
+
+
+
+
+## 三角函数和差化积
+
+$$
+\sin\alpha+ \sin \beta = 2\sin\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2}
+$$
+
+
+$$
+\sin\alpha - \sin \beta = 2\cos\frac{\alpha+\beta}{2}\sin\frac{\alpha-\beta}{2}
+$$
+
+
+$$
+\cos\alpha + \cos \beta = 2\cos\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2}
+$$
+
+$$
+\cos\alpha - \cos \beta = 2\sin\frac{\alpha+\beta}{2}\sin\frac{\alpha-\beta}{2}
+$$
+
+
+
+
+## 欧拉公式
+
+$$
+e^{j\omega t} = \cos(\omega t) + j\sin(\omega t)
+$$
+$$
+e^{-j\omega t} = \cos(\omega t) - j\sin(\omega t)
+$$
+$$
+\cos(\omega t) = \frac{1}{2}(e^{j\omega t} + e^{-j\omega t}) 
+$$
+$$
+\sin(\omega t) = \frac{1}{2j} (e^{j\omega t} - e^{-j\omega t})
+$$
+
+
+
 # 信号分类
 ### 指数信号
 $$
