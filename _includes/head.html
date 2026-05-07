@@ -1,2 +1,18 @@
-<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
-<script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+{% if site.mathjax %}
+MathJax.Hub.Config({
+  tex: {
+    inlineMath: [['\$', '\$'], ['\$', '\$']],
+    displayMath: [['$$', '$$'], ['\$$', '\$$
+']],
+    processEscapes: true,
+    processEnvironments: true
+  },
+  svg: {
+    fontCache: 'global'
+  },
+  options: {
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+// ]]>
+{% endif %}
