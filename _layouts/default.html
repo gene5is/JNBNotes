@@ -1,20 +1,22 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-    {%- feed_meta -%}
+{% raw %}
+---
+# 这一行必须保留，让 Jekyll 识别为布局文件
+---
 
-    <!-- 引入 MathJax (必须放到 head 或 body 最后) -->
-    <script type="text/javascript" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
-  </head>
-  <body>
-    <main>
+{% include head.html %}
+
+<!-- MathJax 公式渲染（不破坏主题） -->
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+{% include header.html %}
+
+  <div class="page-content">
+    <div class="wrapper">
       {{ content }}
-    </main>
-  </body>
-</html>
+    </div>
+  </div>
+
+{% include footer.html %}
+{% endraw %}
