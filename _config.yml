@@ -1,37 +1,16 @@
 title: JNBNotes
 description: 个人笔记
-baseurl: "/JNBNotes"   # 必须写这个！
+baseurl: "/JNBNotes"
 url: "https://gene5is.github.io"
 
-# 主题 ==============================
-remote_theme: chirpy-starter/jekyll-theme-chirpy
-logo: "/assets/img/favicons/android-chrome-192x192.png"
+# 🔥 官方主题 Time Machine
+theme: jekyll-theme-time-machine
 
-# markdown & 数学公式 =================
+# Markdown & 公式渲染（支持 LaTeX）
 markdown: kramdown
 kramdown:
   math_engine: mathjax
   input: GFM
-  syntax_highlighter: rouge
 
-# 插件 ===============================
 plugins:
-  - jekyll-paginate
-  - - jekyll-remote-theme
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-# 必须的 Chirpy 配置 ==================
-paginate: 10
-panels:
-  about: true
-  related: true
-
-# 数学公式（已开启）
-math:
-  enable: true
-  engine: mathjax
-
-# 语言/时区
-lang: zh-CN
-timezone: Asia/Shanghai
+  - jekyll-feed
