@@ -3,7 +3,7 @@ description: 个人笔记
 baseurl: "" # 你的子路径名，比如果用 user.github.io 仓库可以留空
 url: "https://gene5is.github.io/JNBNotes" # 仓库主页 URL
 
-theme: minima
+theme: jekyll-theme-chirpy
 markdown: kramdown
 kramdown:
   math_engine: mathjax
