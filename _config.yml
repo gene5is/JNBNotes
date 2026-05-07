@@ -12,5 +12,6 @@ kramdown:
   math_engine: mathjax
   input: GFM
 
+head_custom: _includes/head-custom.html
 plugins:
   - jekyll-feed
