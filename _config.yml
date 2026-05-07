@@ -1,16 +1,15 @@
-title: 笔记
-author: wjj 
-logo: logo.png
-theme: minima
+title: JNBNotes
+description: 个人笔记
+baseurl: "" # 你的子路径名，比如果用 user.github.io 仓库可以留空
+url: "https://gene5is.github.io/JNBNotes" # 仓库主页 URL
 
+theme: minima
 markdown: kramdown
 kramdown:
-  syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
-    css_class: highlight
-    # default_lang: console
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
+  math_engine: mathjax
+  input: GFM
+
+plugins:
+  - jekyll-feed
+
+# 可选：根据需要添加菜单、社交等
