@@ -1,18 +1,22 @@
-{% raw %}
-{% include head.html %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- MathJax 公式渲染（不破坏主题） -->
-<script type="text/javascript" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
+  <!-- 🔥 加载 Time Machine 官方主题样式（关键！） -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-time-machine-theme/1.0.0/time-machine.min.css">
+  
+  {% feed_meta %}
 
-{% include header.html %}
-
-  <div class="page-content">
-    <div class="wrapper">
-      {{ content }}
-    </div>
-  </div>
-
-{% include footer.html %}
-{% endraw %}
+  <!-- 公式渲染 MathJax -->
+  <script type="text/javascript" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+  <!-- 你的内容会正常显示 -->
+  {{ content }}
+</body>
+</html>
