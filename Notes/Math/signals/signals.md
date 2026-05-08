@@ -2,6 +2,7 @@
 # 数学基础
 
 ## 三角函数
+
 $$
 \sin(\alpha+\beta) = \sin\alpha\cos\beta+\cos\alpha\sin\beta
 $$
@@ -20,6 +21,7 @@ $$
 
 
 ## 三角函数积化和差
+
 $$
 \sin\alpha\cos\beta = \frac{1}{2}[\sin(\alpha+\beta)+\sin(\alpha-\beta)]
 $$
@@ -84,12 +86,14 @@ $$
 
 # 信号分类
 ### 指数信号
+
 $$
 f(t) = Ke^{at}
 $$
 
 
 ### 正弦信号
+
 $$
 f(t) = K\sin(\omega t +\theta)
 $$
@@ -101,6 +105,7 @@ T = \frac{2\pi}{\omega} = \frac{1}{f}
 $$
 
 ### 复指数信号
+
 $$
 f(t) = Ke^{st}= Ke^{\sigma+j\omega} = Ke^{\sigma t}\cos(\omega t) + jKe^{\sigma t}\sin(\omega t)
 $$
