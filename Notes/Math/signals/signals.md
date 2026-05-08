@@ -5,12 +5,15 @@
 $$
 \sin(\alpha+\beta) = \sin\alpha\cos\beta+\cos\alpha\sin\beta
 $$
+
 $$
 \sin(\alpha-\beta) = \sin\alpha\cos\beta-\cos\alpha\sin\beta
 $$
+
 $$
 \cos(\alpha+\beta) = \cos\alpha\cos\beta-\sin\alpha\sin\beta
 $$
+
 $$
 \cos(\alpha-\beta) = \cos\alpha\cos\beta+\sin\alpha\sin\beta
 $$
@@ -20,12 +23,15 @@ $$
 $$
 \sin\alpha\cos\beta = \frac{1}{2}[\sin(\alpha+\beta)+\sin(\alpha-\beta)]
 $$
+
 $$
 \cos\alpha\sin\beta = \frac{1}{2}[\sin(\alpha+\beta)-\sin(\alpha-\beta)]
 $$
+
 $$
 \cos\alpha\cos\beta = \frac{1}{2}[\cos(\alpha+\beta)+\cos(\alpha-\beta)]
 $$
+
 $$
 \sin\alpha\sin\beta = \frac{1}{2}[\cos(\alpha-\beta)-\cos(\alpha+\beta)]
 $$
@@ -61,12 +67,15 @@ $$
 $$
 e^{j\omega t} = \cos(\omega t) + j\sin(\omega t)
 $$
+
 $$
 e^{-j\omega t} = \cos(\omega t) - j\sin(\omega t)
 $$
+
 $$
 \cos(\omega t) = \frac{1}{2}(e^{j\omega t} + e^{-j\omega t}) 
 $$
+
 $$
 \sin(\omega t) = \frac{1}{2j} (e^{j\omega t} - e^{-j\omega t})
 $$
