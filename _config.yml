@@ -9,8 +9,13 @@ theme: jekyll-theme-architect
 markdown: kramdown
 kramdown:
   math_engine: mathjax
+  highlighter: rouge 
   input: GFM
+  incremental: true  
 
 head_custom: _includes/head-custom.html
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  
+paginate: 10              # 每页显示的文章数量
