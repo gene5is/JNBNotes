@@ -1,11 +1,13 @@
 
 ---
-title: "信号"
-categories: [信号]
-tags: [信号]
----
 
-{:toc}
+title: "信号"
+
+categories: [信号]
+
+tags: [信号]
+
+---
 
 # 数学基础
 
