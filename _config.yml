@@ -3,8 +3,8 @@ description: ""
 baseurl: "/JNBNotes"
 url: "https://gene5is.github.io"
 
-# 远程主题
-remote_theme: cotes2020/jekyll-theme-chirpy
+theme: cayman
+
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
