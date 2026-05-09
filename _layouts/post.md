@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.date | date: "%Y-%m-%d" }}</p>
+
+  <!-- 自动目录 -->
+  {% include toc.html %}
+
+  {{ content }}
+</article>
