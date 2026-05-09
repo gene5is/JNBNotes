@@ -1,49 +1,38 @@
 title: 笔记
-description: "" # 建议加上双引号，如果为空可以写 ""
-baseurl: "/JNBNotes"
-url: "https://gene5is.github.io"
+description: ""
+author:
+  name: 能饮一杯吴
+  email: 1175791112@qq.com
 
-theme: jekyll-theme-minimal
+# 官方主题 minima v3
+theme: minima
+  skin: auto
+date_format: "%b-%d-%Y"
 
-date_format: "%Y-%m-%d"
+minima:
+  skin: classic
+  nav_pages:
+    - index.md
+    - categories.md
+    - about.md
 
+# 你的 /Notes 笔记目录
 collections:
   Notes:
     output: true
     permalink: /Notes/:title/
 
-
-# Markdown & 公式渲染
+# 构建配置（官方原版）
 markdown: kramdown
 kramdown:
-  math_engine: mathjax
-  highlighter: rouge 
   input: GFM
-  # incremental: true  # 注意：incremental 应该直接写在顶层，不属于 kramdown 子项
-incremental: true
 
-# head_custom 通常不需要写在顶层配置，除非主题有特殊要求
-# 默认 Cayman 只要在 _includes 下有 head-custom.html 会自动加载
+mathjax: false
 
 plugins:
   - jekyll-feed
-  - jekyll-paginate
-  - jekyll-toc
-  - jekyll-sitemap
+  - jekyll-seo-tag
 
-toc:
-  min_level: 2
-  max_level: 4
-  
-paginate: 10              
-
-header_pages: 
-  - index.md
-  
-nav:
-  - title: 首页
-    url: /
-  - title: 数学笔记
-    url: /Notes/Math/
-  - title: 其他笔记
-    url: /Notes/other/
+# 网址
+url: "https://gene5is.github.io"
+baseurl: ""
