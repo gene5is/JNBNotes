@@ -3,8 +3,7 @@ description: 个人笔记
 baseurl: "/JNBNotes"
 url: "https://gene5is.github.io"
 
-# 🔥 官方主题 Time Machine
-theme: jekyll-theme-time-machine
+theme: jekyll-theme-architect
 
 # Markdown & 公式渲染（支持 LaTeX）
 markdown: kramdown
