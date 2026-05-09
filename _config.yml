@@ -3,7 +3,7 @@ description: ""
 baseurl: "/JNBNotes"
 url: "https://gene5is.github.io"
 
-theme: cayman
+theme: jekyll-theme-cayman
 
 plugins:
   - jekyll-remote-theme
