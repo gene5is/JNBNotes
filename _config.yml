@@ -3,7 +3,7 @@ description: "" # 建议加上双引号，如果为空可以写 ""
 baseurl: "/JNBNotes"
 url: "https://gene5is.github.io"
 
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: cotes2020/jekyll-theme-chirpy
 
 # Markdown & 公式渲染
 markdown: kramdown
