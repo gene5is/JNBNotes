@@ -21,13 +21,11 @@ plugins:
 paginate: 10              # 每页显示的文章数量
 
 header_pages: 
-  - about.md
-  - categories.md
-  - archive.md
+  - index.md
 
   nav:
   - title: 首页
-    url: /JNBNotes
+    url: /JNBNotes/index.md
   - title: 数学笔记
     url: /Notes/Math/
   - title: 其他笔记
