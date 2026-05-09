@@ -1,13 +1,13 @@
 
----
 
-title: "信号"
-
-categories: [信号]
-
-tags: [信号]
 
 ---
+layout: post
+title: 序言
+category: 指南
+toc: true
+---
+
 
 # 数学基础
 
