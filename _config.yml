@@ -1,9 +1,9 @@
-title: JNBNotes
-description: 个人笔记
+title: 笔记
+description: 
 baseurl: "/JNBNotes"
 url: "https://gene5is.github.io"
 
-theme: jekyll-theme-architect
+theme: jekyll-theme-cayman
 
 # Markdown & 公式渲染（支持 LaTeX）
 markdown: kramdown
@@ -19,3 +19,16 @@ plugins:
   - jekyll-paginate
   
 paginate: 10              # 每页显示的文章数量
+
+header_pages: 
+  - about.md
+  - categories.md
+  - archive.md
+
+  nav:
+  - title: 首页
+    url: /JNBNotes
+  - title: 数学笔记
+    url: /Notes/Math/
+  - title: 其他笔记
+    url: /Notes/other/
