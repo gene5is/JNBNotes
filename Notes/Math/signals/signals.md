@@ -161,12 +161,78 @@ $$
 ### 单位阶跃信号
 
 $$
+u(t) = 
+\begin{cases} 
+0 \quad (t<0) \\
+1 \quad (t\geq 0)
+ \end{cases}
+$$
 
+#### 矩形脉冲
+
+$$
+R_T(t) = u(t) - u(t-T)
+$$
+
+$$
+G_T(t) = u(t+\frac{T}{2}) - u(t-\frac{T}{2})
 $$
 
 
 
+#### 符号函数
+
+$$
+sgn(t) = 2u(t) - 1
+$$
+
 ### 冲激信号
+
+$$
+\delta(t) = \lim_{t\to 0} \frac{1}{\tau}[u(t+\frac{\tau}{2})-u(t-\frac{\tau}{2})]
+$$
+
+狄拉克的定义：
+
+$$
+\begin{cases}
+\int_{-\infty}^{\infty}\delta(t)dt =1\\
+\delta(t) = 0 \quad (t\neq 0)
+\end{cases}
+$$
+
+#### 用三角形脉冲表示冲激函数
+
+$$
+\delta(t) =  \lim_{\tau  \to 0}\{\frac{1}{\tau}(1-\frac{\vert t \vert}{\tau})[u(t+\tau) - u(t-\tau)] \}
+$$
+
+
+#### 用双边指数脉冲表示冲激函数
+
+$$
+\delta(t) = \lim_{\tau  \to 0}(\frac{1}{2\tau}e^{-\frac{\vert t\vert}{\tau}})
+$$
+
+
+#### 用钟形脉冲表示冲激函数
+
+$$
+\delta(t) = \lim_{\tau \to 0}(\frac{1}{\tau}e^{-\pi (\frac{t}{\tau})^2})
+$$
+
+#### 用抽样信号表示冲激函数
+
+$$
+\delta(t) = \lim_{k \to \infty}[\frac{k}{\pi}Sa(kt)]
+$$
+
+
+#### 冲击函数的性质
+
+####
+
+
 
 ### 冲击偶信号
 
