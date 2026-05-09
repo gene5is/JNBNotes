@@ -1,38 +1,31 @@
+# 站点基础信息
 title: 笔记
-description: "" # 建议加上双引号，如果为空可以写 ""
+description: ""
 baseurl: "/JNBNotes"
 url: "https://gene5is.github.io"
 
+# 远程主题（Chirpy）
 remote_theme: cotes2020/jekyll-theme-chirpy
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
 
-# Markdown & 公式渲染
+# Markdown & 语法高亮（Chirpy 标准配置）
 markdown: kramdown
 kramdown:
-  math_engine: mathjax
-  highlighter: rouge 
   input: GFM
-  # incremental: true  # 注意：incremental 应该直接写在顶层，不属于 kramdown 子项
+  syntax_highlighter: rouge
+
+# 全局功能开关
 incremental: true
+mathjax: true       # 全局启用 LaTeX 公式
+toc: true          # 全局启用文章目录
+paginate: 10       # 文章分页
 
-mathjax: true
-
-# head_custom 通常不需要写在顶层配置，除非主题有特殊要求
-# 默认 Cayman 只要在 _includes 下有 head-custom.html 会自动加载
-
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-toc
-
-toc:
-  min_level: 2
-  max_level: 4
-  
-paginate: 10              
-
-header_pages: 
-  - index.md
-  
+# 导航栏菜单（Chirpy 专用）
 nav:
   - title: 首页
     url: /
@@ -40,3 +33,12 @@ nav:
     url: /Notes/Math/
   - title: 其他笔记
     url: /Notes/other/
+
+# 页面配置
+header_pages:
+  - index.md
+
+# 目录样式（Chirpy 自动生效，无需额外 jekyll-toc）
+toc:
+  min_level: 2
+  max_level: 4
