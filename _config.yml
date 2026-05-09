@@ -3,7 +3,7 @@ description: "" # 建议加上双引号，如果为空可以写 ""
 baseurl: "/JNBNotes"
 url: "https://gene5is.github.io"
 
-theme: jekyll-theme-modernist
+remote_theme: mmistakes/minimal-mistakes
 
 # Markdown & 公式渲染
 markdown: kramdown
@@ -13,6 +13,8 @@ kramdown:
   input: GFM
   # incremental: true  # 注意：incremental 应该直接写在顶层，不属于 kramdown 子项
 incremental: true
+
+mathjax: true
 
 # head_custom 通常不需要写在顶层配置，除非主题有特殊要求
 # 默认 Cayman 只要在 _includes 下有 head-custom.html 会自动加载
