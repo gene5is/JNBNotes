@@ -3,7 +3,15 @@ description: "" # 建议加上双引号，如果为空可以写 ""
 baseurl: "/JNBNotes"
 url: "https://gene5is.github.io"
 
-theme: jekyll-theme-modernist
+theme: jekyll-theme-minimal
+
+date_format: "%Y-%m-%d"
+
+collections:
+  Notes:
+    output: true
+    permalink: /Notes/:title/
+
 
 # Markdown & 公式渲染
 markdown: kramdown
@@ -21,6 +29,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-toc
+  - jekyll-sitemap
 
 toc:
   min_level: 2
