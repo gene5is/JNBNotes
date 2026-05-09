@@ -1,0 +1,9 @@
+{% if page.toc %}
+<div style="margin-bottom: 2em; padding: 1em; background: #f7f7f7; border-radius: 8px;">
+  <h4>目录</h4>
+  {% capture toc %}
+  {% include toc_helper.html html=content %}
+  {% endcapture %}
+  {{ toc | replace: '<ul>', '<ul style="padding-left: 1.2em;">' }}
+</div>
+{% endif %}
