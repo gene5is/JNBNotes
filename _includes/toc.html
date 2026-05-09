@@ -1,13 +1,16 @@
-{% capture toc %}
-{% assign headers = include.html | split: '<h' %}
-<ul>
-  {% for header in headers offset:1 %}
-    {% assign level = header | slice: 0 %}
-    {% if level < '2' or level > '4' %}{% continue %}{% endif %}
-    {% assign id = header | split: 'id="' | last | split: '"' | first %}
-    {% assign text = header | split: '</h' | first | split: '>' | last %}
-    <li><a href="#{{ id }}">{{ text }}</a></li>
-  {% endfor %}
-</ul>
-{% endcapture %}
-{{ toc | normalize_whitespace }}
+{% if page.toc %}
+<div style="background:#f7f7f7; padding:1em; border-radius:8px; margin:1em 0;">
+  <h4 style="margin-top:0;">目录</h4>
+  {% assign headers = content | split: '<h' %}
+  <ul style="padding-left:1.2em; margin:0;">
+    {% for h in headers offset:1 %}
+      {% assign level = h | slice: 0 %}
+      {% if level == '2' or level == '3' %}
+        {% assign id = h | split: 'id="' | last | split: '"' | first %}
+        {% assign text = h | split: '</h' | first | split: '>' | last %}
+        <li><a href="#{{ id }}">{{ text }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
