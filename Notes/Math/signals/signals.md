@@ -118,11 +118,53 @@ $$
 
 ### 抽样信号
 
+$$
+Sa(t) = \frac{\sin t}{t}
+$$
+
+$$
+sinc(t) = \frac{\sin(\pi t)}{\pi t}
+$$
+
+$$
+\int_{0}^\infty Sa(t) dt = \frac{\pi}{2}
+$$
+
+$$
+\int_{-\infty}^\infty Sa(t) dt = \pi
+$$
+
 ### 钟形信号
+
+$$
+f(t) = Ee^{-(\frac{t}{\tau})^2}
+$$
+
 
 ### 单位斜变信号
 
+$$
+f(t) = \begin{cases} 
+0 \quad (t<0) \\
+t \quad (t\geq 0)
+ \end{cases}
+$$
+
+$$
+f(t - t_0) =
+\begin{cases}
+0 & \text{if } t < t_0 \\
+t - t_0 & \text{if } t \geq t_0
+\end{cases}
+$$
+
 ### 单位阶跃信号
+
+$$
+
+$$
+
+
 
 ### 冲激信号
 
