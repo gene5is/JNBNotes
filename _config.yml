@@ -1,29 +1,36 @@
 title: 笔记
-description: ""
+description: "" # 建议加上双引号，如果为空可以写 ""
 baseurl: "/JNBNotes"
 url: "https://gene5is.github.io"
 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-modernist
 
-plugins:
-  - jekyll-remote-theme
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-# Markdown
+# Markdown & 公式渲染
 markdown: kramdown
 kramdown:
+  math_engine: mathjax
+  highlighter: rouge 
   input: GFM
-  syntax_highlighter: rouge
+  # incremental: true  # 注意：incremental 应该直接写在顶层，不属于 kramdown 子项
+incremental: true
 
-# 功能
-incremental: false
-mathjax: true
-toc: true
-paginate: 10
+# head_custom 通常不需要写在顶层配置，除非主题有特殊要求
+# 默认 Cayman 只要在 _includes 下有 head-custom.html 会自动加载
 
-# 导航
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-toc
+
+toc:
+  min_level: 2
+  max_level: 4
+  
+paginate: 10              
+
+header_pages: 
+  - index.md
+  
 nav:
   - title: 首页
     url: /
@@ -31,6 +38,3 @@ nav:
     url: /Notes/Math/
   - title: 其他笔记
     url: /Notes/other/
-
-# 关闭不兼容配置
-theme: null
