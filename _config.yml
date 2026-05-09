@@ -1,31 +1,29 @@
-# 站点基础信息
 title: 笔记
 description: ""
 baseurl: "/JNBNotes"
 url: "https://gene5is.github.io"
 
-# 远程主题（Chirpy）
+# 远程主题
 remote_theme: cotes2020/jekyll-theme-chirpy
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
 
-# Markdown & 语法高亮（Chirpy 标准配置）
+# Markdown
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-# 全局功能开关
-incremental: true
-mathjax: true       # 全局启用 LaTeX 公式
-toc: true          # 全局启用文章目录
-paginate: 10       # 文章分页
+# 功能
+incremental: false
+mathjax: true
+toc: true
+paginate: 10
 
-# 导航栏菜单（Chirpy 专用）
+# 导航
 nav:
   - title: 首页
     url: /
@@ -34,11 +32,5 @@ nav:
   - title: 其他笔记
     url: /Notes/other/
 
-# 页面配置
-header_pages:
-  - index.md
-
-# 目录样式（Chirpy 自动生效，无需额外 jekyll-toc）
-toc:
-  min_level: 2
-  max_level: 4
+# 关闭不兼容配置
+theme: null
